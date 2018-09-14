@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMountComputer.Paginas.MinhasPecas">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Peças" FontSize="24"/>
+                <Button Text="encontre a sua peça" FontSize="12"/>
+            </StackLayout>
+           <!-- <StackLayout Orientation="Horizontal">
+                <Button Text="Adicionar" Clicked="GoCadastro"/>
+                <Button Text="Minhas Peças" Clicked="GoMinhasVagas" />
+            </StackLayout>-->
+
+            <Entry Placeholder="Pesquisar" />
+
+            <ListView>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="100" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Label Grid.Column="0" Text="{Binding marca}"  FontAttributes="Bold"/>
+                            <Label Grid.Column="1" Text="{Binding preco}" />
+
+                            <Label Text="Editar" Grid.Column="1">
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="EditarAction" CommandParameter="{Binding .}" />
+                                </Label.GestureRecognizers>
+                            </Label>
+                            <Label Text="|" Grid.Column="1"/>
+                            <Label Text="Excluir" Grid.Column="1">
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="ExcluirAction" CommandParameter="{Binding .}" />
+                                </Label.GestureRecognizers>
+                            </Label>
+                            
+                        </Grid>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

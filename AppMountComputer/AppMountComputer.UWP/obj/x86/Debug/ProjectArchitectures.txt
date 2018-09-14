@@ -1,0 +1,1 @@
+C:\Users\zigui\source\repos\AppMountComputer\AppMountComputer\AppMountComputer.UWP\AppMountComputer.UWP.csproj;x86
