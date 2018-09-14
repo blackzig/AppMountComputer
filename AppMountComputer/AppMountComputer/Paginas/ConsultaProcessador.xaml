@@ -13,7 +13,7 @@
                 <Button Text="Minhas Peças" Clicked="GoMinhasPecas" />
             </StackLayout>
 
-            <Entry Placeholder="Pesquisar" />
+            <Entry Placeholder="Pesquisar" TextChanged="PesquisarAction"/>
             <Label x:Name="lblCount" />
             <ListView x:Name="ListaProcessadores">
                 <ListView.ItemTemplate>
@@ -35,7 +35,7 @@
 
                                 <Label Text="+Detalhe" Grid.Column="1">
                                     <Label.GestureRecognizers>
-                                        <TapGestureRecognizer Tapped="MaisDetalheAction" CommandParameter="{Binding .}" />
+                                        <TapGestureRecognizer Tapped="MaisDetalheAction" CommandParameter="{Binding}" />
                                     </Label.GestureRecognizers>
                                 </Label>
                             </Grid>

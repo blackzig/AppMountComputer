@@ -14,8 +14,9 @@
             </StackLayout>-->
 
             <Entry Placeholder="Pesquisar" />
+            <Label x:Name="lblCount" />
 
-            <ListView>
+            <ListView x:Name="ListaProcessadores">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <Grid>

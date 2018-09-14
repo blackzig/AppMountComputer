@@ -14,12 +14,14 @@ namespace AppMountComputer.Paginas
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ConsultaProcessador : ContentPage
     {
+        List<Processador> lista { get; set; }
+
         public ConsultaProcessador()
         {
             InitializeComponent();
 
             Database database = new Database();
-            var lista = database.Consultar();
+            lista = database.Consultar();
             ListaProcessadores.ItemsSource = lista;
 
             lblCount.Text = lista.Count.ToString();
@@ -45,9 +47,20 @@ namespace AppMountComputer.Paginas
             Navigation.PushAsync(new DetalhePeca(processador));
         }
 
-        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        public void PesquisarAction(
+            object sender, TextChangedEventArgs args)
+        {
+            ListaProcessadores.ItemsSource = 
+                lista.Where(a=>a.marca.Contains(args.NewTextValue)).
+                ToList();
+        }
+
+        /*
+        private void TapGestureRecognizer_Tapped(
+            object sender, TextChangedEventArgs args)
         {
 
         }
+        */
     }
 }

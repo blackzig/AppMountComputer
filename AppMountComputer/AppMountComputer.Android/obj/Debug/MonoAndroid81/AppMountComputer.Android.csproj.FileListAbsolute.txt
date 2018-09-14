@@ -102,7 +102,9 @@ C:\Users\zigui\source\repos\AppMountComputer\AppMountComputer\AppMountComputer.A
 C:\Users\zigui\source\repos\AppMountComputer\AppMountComputer\AppMountComputer.Android\obj\Debug\MonoAndroid81\android\assets\System.Xml.pdb
 C:\Users\zigui\source\repos\AppMountComputer\AppMountComputer\AppMountComputer.Android\obj\Debug\MonoAndroid81\android\assets\Xamarin.Forms.Core.pdb
 C:\Users\zigui\source\repos\AppMountComputer\AppMountComputer\AppMountComputer.Android\obj\Debug\MonoAndroid81\android\assets\Xamarin.Forms.Xaml.pdb
+C:\Users\zigui\source\repos\AppMountComputer\AppMountComputer\AppMountComputer\bin\Debug\netstandard2.0\AppMountComputer.dll
 C:\Users\zigui\source\repos\AppMountComputer\AppMountComputer\AppMountComputer.Android\obj\Debug\MonoAndroid81\linksrc\AppMountComputer.Android.pdb
+C:\Users\zigui\source\repos\AppMountComputer\AppMountComputer\AppMountComputer.Android\bin\Debug\AppMountComputer.dll.mdb
 C:\Users\zigui\source\repos\AppMountComputer\AppMountComputer\AppMountComputer.Android\obj\Debug\MonoAndroid81\linksrc\AppMountComputer.dll.mdb
 C:\Users\zigui\source\repos\AppMountComputer\AppMountComputer\AppMountComputer.Android\obj\Debug\MonoAndroid81\linksrc\FormsViewGroup.dll.mdb
 C:\Users\zigui\source\repos\AppMountComputer\AppMountComputer\AppMountComputer.Android\obj\Debug\MonoAndroid81\linksrc\Xamarin.Forms.Platform.Android.dll.mdb

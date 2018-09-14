@@ -7,7 +7,7 @@
             <Label Text="{Binding marca}" FontSize="18" 
                    HorizontalOptions="Center" FontAttributes="Bold"/>
             <Label Text="{Binding linha}" FontSize="10" 
-                   HorizontalOptions="Center" FontAttributes="#DDDDDD"/>
+                   HorizontalOptions="Center" TextColor="Gray"/>
             
             <StackLayout Orientation="Horizontal">
                 <Label Text="Modelo: " FontAttributes="Bold"/>
