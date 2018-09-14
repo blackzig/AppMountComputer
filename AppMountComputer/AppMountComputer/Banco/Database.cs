@@ -45,9 +45,9 @@ namespace AppMountComputer.Banco
             _conexao.Update(processador);
         }
 
-        public void Exclusao(int id)
+        public void Exclusao(Processador processador)
         {
-            _conexao.Delete(id);
+            _conexao.Delete(processador);
         }
 
     }

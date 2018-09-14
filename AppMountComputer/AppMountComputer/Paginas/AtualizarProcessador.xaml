@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMountComputer.Paginas.AtualizarProcessador">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry x:Name="id" Placeholder="id" />
+            <Entry x:Name="marca" Placeholder="marca" />
+            <Entry x:Name="linha" Placeholder="linha" />
+            <Entry x:Name="modelo" Placeholder="modelo" />
+            <Entry x:Name="preco" Placeholder="preco" />
+
+            <Button Text="Salvar" Clicked="salvarAction"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

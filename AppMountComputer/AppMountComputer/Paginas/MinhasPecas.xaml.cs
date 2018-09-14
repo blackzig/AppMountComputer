@@ -19,6 +19,11 @@ namespace AppMountComputer.Paginas
         public MinhasPecas ()
 		{
 			InitializeComponent ();
+            ConstularPecas();
+        }
+
+        private void ConstularPecas()
+        {
 
             Database database = new Database();
             lista = database.Consultar();
@@ -29,11 +34,25 @@ namespace AppMountComputer.Paginas
 
         public void EditarAction(object sender, EventArgs args)
         {
-
+            Label lblEditar = (Label)sender;
+            TapGestureRecognizer tapGest =
+           (TapGestureRecognizer)lblEditar.GestureRecognizers[0];
+            Processador processador = tapGest.
+            CommandParameter as Processador;
+            Navigation.PushAsync(new AtualizarProcessador(processador));
         }
 
         public void ExcluirAction(object sender, EventArgs args)
         {
+            Label lblExcluir = (Label)sender;
+            TapGestureRecognizer tapGest =
+           (TapGestureRecognizer)lblExcluir.GestureRecognizers[0];
+            Processador processador = tapGest.
+            CommandParameter as Processador;
+
+            Database database = new Database();
+            database.Exclusao(processador);
+            ConstularPecas();
 
         }
     }

@@ -16,3 +16,4 @@ C:\Users\zigui\source\repos\AppMountComputer\AppMountComputer\AppMountComputer\o
 C:\Users\zigui\source\repos\AppMountComputer\AppMountComputer\AppMountComputer\obj\Debug\netstandard2.0\Paginas\ConsultaProcessador.xaml.g.cs
 C:\Users\zigui\source\repos\AppMountComputer\AppMountComputer\AppMountComputer\obj\Debug\netstandard2.0\Paginas\DetalhePeca.xaml.g.cs
 C:\Users\zigui\source\repos\AppMountComputer\AppMountComputer\AppMountComputer\obj\Debug\netstandard2.0\Paginas\MinhasPecas.xaml.g.cs
+C:\Users\zigui\source\repos\AppMountComputer\AppMountComputer\AppMountComputer\obj\Debug\netstandard2.0\Paginas\AtualizarProcessador.xaml.g.cs

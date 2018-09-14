@@ -17,6 +17,7 @@ namespace AppMountComputer.Paginas
 		public CadastroProcessador ()
 		{
 			InitializeComponent ();
+
 		}
 
         public void salvarAction(object Sender, EventArgs args)
